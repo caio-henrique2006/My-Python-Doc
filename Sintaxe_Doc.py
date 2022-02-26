@@ -85,16 +85,33 @@ class Calculator():
 
 print(Calculator(5, 6).multiplicacao())
 
+# Dictionaries:
+print("\nExemplo de Dictionaries: ")
 
+market = {"applePrice":20, "bananaPrice":10, "eggPrice":5}
+for i in market:
+    print(i, market[i])
 
+# Formating:
+print("\nExemplo de Formatting: ")
 
+print("%s buy a %d dollars coffe and a %1.2f bread." %("Caio", 2, 3.25))
+print("His name is {name}. {name} bought a car for {carPrice} dollars.".format(name="Caio",carPrice=200000))
 
+# Functions:
+print("\nExemplo Functions: ")
 
+'''
+def ~functionName~(~arguments~):
+    ~code~
+    return ~code~
+'''
 
+def bewareWith(scaryThing):
+    bewareSentence = "beware with " + scaryThing
+    return bewareSentence
 
-
-
-
+print(bewareWith("Baba Yaga"))
 
 
 
