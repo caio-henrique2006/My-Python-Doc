@@ -65,6 +65,14 @@ for ~variable~ in ~list~:
 for a in range(0,11):
     print("I'm ", a, "years old")
 
+# While:
+print("\nExemplo While: ")
+
+condition = 1
+while(condition <= 10):
+    print("condition is now ", condition)
+    condition += 1
+
 # Class:
 print("\nExemplo de Classe: ")
 
@@ -113,13 +121,54 @@ def bewareWith(scaryThing):
 
 print(bewareWith("Baba Yaga"))
 
+# Lists:
+print("\nExemplo Lists: ")
 
+marketList = ["apples", "bananas", "meat", "eggs", "cheese"]
+print(marketList[2])
 
+# Tuple:
+# Tuples are lists that cannot be changed:
+marketList = (1,2,3)
 
+# Open files:
+print("\nExemplo open files: ")
+text = open("textTest.txt", "r") # open and read file
+print(text.read(1))
+print(text.readline())
+print(text.read())
+text.close()
+text = open("textTest.txt", "a") # open and append file
+text.write("\nNew line for you baby")
+text.close()
+'''
+text = open("textTest", "w") # open and delete all the content for writting
+a new one
+'''
 
+# Methods and native functions:
 
-
-
+# List methods:
+'''
+sample = [1,2,2,3,4,5,6,7]
+sample.append(x) # Acrescenta 'x' um valor no final da lista
+sample.count(x) # conta quantos 'x' tem na lista
+sample.index(x) # retorna o index do primeiro elemento 'x'
+sample.insert(y,x) # substituí 'y' por 'x'
+sample.pop() # retorna último elemento
+sample.remove(x) # remove 'x'
+sample.reverse() # retorna a lista ao contrário
+sample.sort() # organiza em ordem alfábetica ou númerica ascendente
+'''
+# String methods:
+'''
+stringVar.count(‘x’) – counts the number of occurrences of ‘x’ in stringVar
+stringVar.find(‘x’) – returns the position of character ‘x’
+stringVar.lower() – returns the stringVar in lowercase (this is temporary)
+stringVar.upper() – returns the stringVar in uppercase (this is temporary)
+stringVar.replace(‘a’, ‘b’) – replaces all occurrences of a with b in the string
+stringVar.strip() – removes leading/trailing white space from string
+'''
 
 
 
